@@ -9,7 +9,6 @@
       <change afterPath="$PROJECT_DIR$/../pathologySystem/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pathologySystem/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springbootwithkafka/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootwithkafka/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springbootwithkafka/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootwithkafka/.idea/workspace.xml" afterDir="false" />
     </list>
@@ -50,7 +49,7 @@
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="75">
-                  <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+                  <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
                   <folding>
                     <element signature="e#113#114#0" expanded="true" />
                     <element signature="e#137#138#0" expanded="true" />
@@ -87,8 +86,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="506">
-                  <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+                <state relative-caret-position="462">
+                  <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#155#156#0" expanded="true" />
@@ -112,6 +111,7 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>0</find>
+      <find>itsThrows[ball++]</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -226,7 +226,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestGame">
+  <component name="RunManager" selected="JUnit.TestGame.testFourThrowsNoMark">
     <configuration name="TestFrame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.ohdoking.bowling.test" />
       <extension name="coverage">
@@ -258,22 +258,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestFrame.testScoreNoThrows" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="com.ohdoking.bowling.test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ohdoking.bowling.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.ohdoking.bowling" />
-      <option name="MAIN_CLASS_NAME" value="com.ohdoking.bowling.TestFrame" />
-      <option name="METHOD_NAME" value="testScoreNoThrows" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestGame" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="com.ohdoking.bowling.test" />
       <extension name="coverage">
@@ -285,6 +269,22 @@
       <option name="PACKAGE_NAME" value="com.ohdoking.bowling" />
       <option name="MAIN_CLASS_NAME" value="com.ohdoking.bowling.TestGame" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGame.testFourThrowsNoMark" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="com.ohdoking.bowling.test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ohdoking.bowling.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.ohdoking.bowling" />
+      <option name="MAIN_CLASS_NAME" value="com.ohdoking.bowling.TestGame" />
+      <option name="METHOD_NAME" value="testFourThrowsNoMark" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -307,11 +307,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.TestGame.testFourThrowsNoMark" />
         <item itemvalue="JUnit.TestGame" />
         <item itemvalue="JUnit.TestGame.testTwoThrowNoMark" />
         <item itemvalue="JUnit.TestFrame" />
         <item itemvalue="JUnit.TestFrame.testAddOneThrow" />
-        <item itemvalue="JUnit.TestFrame.testScoreNoThrows" />
       </list>
     </recent_temporary>
   </component>
@@ -329,12 +329,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestFrame_testScoreNoThrows - 2021.03.18 at 06h 08m 50s.xml">
-      <configuration name="TestFrame.testScoreNoThrows" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFrame_testAddOneThrow - 2021.03.18 at 06h 11m 07s.xml">
-      <configuration name="TestFrame.testAddOneThrow" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestFrame - 2021.03.18 at 06h 15m 34s.xml">
       <configuration name="TestFrame" configurationId="JUnit" />
     </history-entry>
@@ -355,6 +349,15 @@
     </history-entry>
     <history-entry file="TestGame - 2021.03.18 at 06h 28m 30s.xml">
       <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.18 at 06h 31m 46s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame_testFourThrowsNoMark - 2021.03.18 at 06h 33m 39s.xml">
+      <configuration name="TestGame.testFourThrowsNoMark" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame_testFourThrowsNoMark - 2021.03.18 at 06h 34m 14s.xml">
+      <configuration name="TestGame.testFourThrowsNoMark" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -432,8 +435,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="36" column="43" lean-forward="true" selection-start-line="36" selection-start-column="43" selection-end-line="36" selection-end-column="43" />
+        <state relative-caret-position="462">
+          <caret line="36" column="48" selection-start-line="36" selection-start-column="48" selection-end-line="36" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#155#156#0" expanded="true" />
@@ -445,7 +448,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="40" selection-start-line="5" selection-start-column="40" selection-end-line="5" selection-end-column="40" />
+          <caret line="5" column="30" selection-start-line="5" selection-start-column="30" selection-end-line="5" selection-end-column="30" />
           <folding>
             <element signature="e#113#114#0" expanded="true" />
             <element signature="e#137#138#0" expanded="true" />
