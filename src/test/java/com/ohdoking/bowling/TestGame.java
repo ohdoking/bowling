@@ -26,6 +26,16 @@ public class TestGame {
         Assert.assertEquals(9, g.score());
     }
 
+    @Test
+    public void testFourThrowsNoMark(){
+        g.add(5);
+        g.add(4);
+        g.add(7);
+        g.add(2);
 
+        Assert.assertEquals(18, g.score());
+        Assert.assertEquals(9, g.scoreForFrame(1));
+        Assert.assertEquals(18, g.scoreForFrame(2));
+    }
 
 }
