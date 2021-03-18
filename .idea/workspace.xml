@@ -9,7 +9,6 @@
       <change afterPath="$PROJECT_DIR$/../pathologySystem/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pathologySystem/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springbootwithkafka/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootwithkafka/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springbootwithkafka/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootwithkafka/.idea/workspace.xml" afterDir="false" />
@@ -50,8 +49,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="437">
-                  <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+                <state relative-caret-position="77">
+                  <caret line="6" column="40" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="40" />
                   <folding>
                     <element signature="e#113#114#0" expanded="true" />
                     <element signature="e#137#138#0" expanded="true" />
@@ -90,8 +89,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="492">
-                  <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+                <state relative-caret-position="593">
+                  <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
                   <folding>
                     <element signature="imports" expanded="true" />
                     <element signature="e#155#156#0" expanded="true" />
@@ -335,21 +334,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGame - 2021.03.18 at 06h 49m 03s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.18 at 06h 49m 57s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.18 at 06h 51m 42s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.18 at 06h 54m 13s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.18 at 06h 55m 27s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestGame - 2021.03.18 at 06h 56m 32s.xml">
       <configuration name="TestGame" configurationId="JUnit" />
     </history-entry>
@@ -363,6 +347,21 @@
       <configuration name="TestGame" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestGame - 2021.03.18 at 06h 59m 18s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.18 at 07h 01m 04s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.18 at 07h 02m 40s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.18 at 07h 03m 21s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.18 at 07h 03m 39s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.18 at 07h 04m 56s.xml">
       <configuration name="TestGame" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -453,8 +452,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="437">
-          <caret line="30" column="56" selection-start-line="30" selection-start-column="56" selection-end-line="30" selection-end-column="56" />
+        <state relative-caret-position="77">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="39" selection-end-line="6" selection-end-column="40" />
           <folding>
             <element signature="e#113#114#0" expanded="true" />
             <element signature="e#137#138#0" expanded="true" />
@@ -466,8 +465,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="79" column="30" selection-start-line="79" selection-start-column="30" selection-end-line="79" selection-end-column="30" />
+        <state relative-caret-position="593">
+          <caret line="135" column="31" selection-start-line="135" selection-start-column="31" selection-end-line="135" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#155#156#0" expanded="true" />
