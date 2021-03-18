@@ -19,6 +19,13 @@ public class TestGame {
         Assert.assertEquals(5, g.score());
     }
 
+    @Test
+    public void testTwoThrowNoMark(){
+        g.add(5);
+        g.add(4);
+        Assert.assertEquals(9, g.score());
+    }
+
 
 
 }
