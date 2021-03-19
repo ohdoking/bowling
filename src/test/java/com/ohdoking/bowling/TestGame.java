@@ -77,7 +77,7 @@ public class TestGame {
             g.add(10);
         }
         Assert.assertEquals(300, g.score());
-        Assert.assertEquals(11, g.getCurrentFrame());
+        Assert.assertEquals(10, g.getCurrentFrame());
     }
 
     @Test

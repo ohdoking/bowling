@@ -7,7 +7,7 @@ public class Game {
     private Scorer itsScorer = new Scorer();
 
     public int score() {
-        return scoreForFrame(getCurrentFrame() - 1);
+        return scoreForFrame(this.itsCurrentFrame);
     }
 
     public int getCurrentFrame() {
@@ -31,7 +31,7 @@ public class Game {
     }
 
     private void advanceFrame() {
-        itsCurrentFrame = Math.min(11, itsCurrentFrame + 1);
+        itsCurrentFrame = Math.min(10, itsCurrentFrame + 1);
     }
 
     private boolean adjustFrameForStrike(int pins){
