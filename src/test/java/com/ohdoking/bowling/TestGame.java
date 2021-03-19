@@ -90,6 +90,7 @@ public class TestGame {
         g.add(8); // spare in last frame
         g.add(10); // strike in last throw
         Assert.assertEquals(20, g.score());
+        Assert.assertEquals(10, g.getCurrentFrame());
     }
 
     @Test
@@ -114,6 +115,7 @@ public class TestGame {
         g.add(8);
         g.add(6);
         Assert.assertEquals(133, g.score());
+        Assert.assertEquals(10, g.getCurrentFrame());
     }
 
     @Test
@@ -123,6 +125,7 @@ public class TestGame {
         }
         g.add(9);
         Assert.assertEquals(299, g.score());
+        Assert.assertEquals(10, g.getCurrentFrame());
     }
 
     @Test
@@ -134,5 +137,6 @@ public class TestGame {
         g.add(1);
         g.add(1);
         Assert.assertEquals(270, g.score());
+        Assert.assertEquals(10, g.getCurrentFrame());
     }
 }
