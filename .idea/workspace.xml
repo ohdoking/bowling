@@ -3,14 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="0831fd8a-e3b3-4931-9e8f-9653f6b5200a" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/../bowling-game/src/com/ohdoking/bowling/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestThrow.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../exercise1/.idea/vcs.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../exercise1/src/Exercise1.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../exercise1/src/MyClass.java" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pathologySystem/.idea/compiler.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../pathologySystem/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springbootwithkafka/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootwithkafka/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../springbootwithkafka/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springbootwithkafka/.idea/workspace.xml" afterDir="false" />
@@ -45,8 +42,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="165">
-                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+                <state relative-caret-position="552">
+                  <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
                   <folding>
                     <element signature="e#1453#1454#0" expanded="true" />
                     <element signature="e#1513#1514#0" expanded="true" />
@@ -117,6 +114,7 @@
       <find>itsThrows[ball++]</find>
       <find>firstThrow</find>
       <find>spare</find>
+      <find>nextTwoBalls</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -337,34 +335,34 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGame - 2021.03.18 at 07h 03m 21s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.18 at 07h 03m 39s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.18 at 07h 04m 56s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.18 at 07h 06m 11s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.19 at 07h 52m 05s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.19 at 07h 54m 19s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.19 at 07h 56m 38s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.19 at 07h 58m 29s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.19 at 08h 01m 57s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestGame - 2021.03.19 at 08h 03m 49s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 04m 54s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 06m 19s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 06m 43s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 07m 00s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 07m 13s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 08m 45s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 08m 59s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 09m 12s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 09m 34s.xml">
       <configuration name="TestGame" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -405,7 +403,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java</url>
-          <line>46</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -459,8 +457,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="552">
+          <caret line="72" column="30" selection-start-line="72" selection-start-column="30" selection-end-line="72" selection-end-column="30" />
           <folding>
             <element signature="e#1453#1454#0" expanded="true" />
             <element signature="e#1513#1514#0" expanded="true" />
