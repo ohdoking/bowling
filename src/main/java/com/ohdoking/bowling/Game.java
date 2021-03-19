@@ -20,26 +20,24 @@ public class Game {
     }
 
     private void adjustCurrentFrame(int pins) {
-        if (firstThrowInFrame) {
-            if (!adjustFrameForStrike(pins)) {
-                firstThrowInFrame = false;
-            }
-        } else {
-            firstThrowInFrame = true;
+        if(isLastBallInFrame(pins)){
             advanceFrame();
         }
+        else{
+            firstThrowInFrame = false;
+        }
+    }
+
+    private boolean isLastBallInFrame(int pins) {
+        return isStrike(pins) || !firstThrowInFrame;
+    }
+
+    private boolean isStrike(int pins) {
+        return firstThrowInFrame &&  pins == 10;
     }
 
     private void advanceFrame() {
         itsCurrentFrame = Math.min(10, itsCurrentFrame + 1);
-    }
-
-    private boolean adjustFrameForStrike(int pins){
-        if (pins == 10) {
-            advanceFrame();
-            return true;
-        }
-        return false;
     }
 
     public int scoreForFrame(int theFrame) {
