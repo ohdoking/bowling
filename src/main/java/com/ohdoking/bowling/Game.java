@@ -6,7 +6,11 @@ public class Game {
     private int itsCurrentThrow = 0;
     private int[] itsThrows = new int[21];
     private int itsCurrentFrame = 1;
-    private boolean firstThrow = true;
+    private boolean firstThrowInFrame = true;
+
+    private int ball;
+    private int firstThrow;
+    private int secondThrow;
 
     public void add(int pins) {
         itsThrows[itsCurrentThrow++] = pins;
@@ -15,17 +19,17 @@ public class Game {
     }
 
     private void adjustCurrentFrame(int pins) {
-        if (firstThrow){
+        if (firstThrowInFrame){
             // strike
             if(pins == 10) {
                 itsCurrentFrame++;
             }
             else{
-                firstThrow = false;
+                firstThrowInFrame = false;
             }
         }
         else{
-            firstThrow = true;
+            firstThrowInFrame = true;
             this.itsCurrentFrame++;
         }
         itsCurrentFrame = Math.min(11, itsCurrentFrame);
@@ -37,24 +41,42 @@ public class Game {
 
     public int scoreForFrame(int theFrame) {
         int score = 0;
-        int ball = 0;
+        ball = 0;
 
         for(int currentFrame = 0; currentFrame < theFrame; currentFrame++){
-            int firstThrow = itsThrows[ball++];
-            if (firstThrow == 10){
-                score += 10 + itsThrows[ball] + itsThrows[ball + 1];
+            firstThrow = itsThrows[ball];
+            if (isStrike()){
+                ball++;
+                score += 10 + nextTwoBalls();
             }
             else{
-                int secondThrow = itsThrows[ball++];
-                int frameScore = firstThrow + secondThrow;
-                //spare need score of next first throw
-                if (frameScore == 10){
-                    score += frameScore + itsThrows[ball];
-                }
-                else {
-                    score += frameScore;
-                }
+                score += handleSecondThrow();
             }
+        }
+        return score;
+    }
+
+    private int nextTwoBalls() {
+        return itsThrows[ball] + itsThrows[ball + 1];
+    }
+
+    private boolean isStrike() {
+        return itsThrows[ball] == 10;
+    }
+
+    private int handleSecondThrow() {
+        int score = 0;
+        secondThrow = itsThrows[ball + 1];
+
+        int frameScore = firstThrow + secondThrow;
+        //spare need score of next first throw
+        if (frameScore == 10){
+            ball += 2;
+            score += frameScore + itsThrows[ball];
+        }
+        else {
+            ball += 2;
+            score += frameScore;
         }
         return score;
     }
