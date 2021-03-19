@@ -43,8 +43,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+                <state relative-caret-position="406">
+                  <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
                   <folding>
                     <element signature="e#298#299#0" expanded="true" />
                     <element signature="e#341#342#0" expanded="true" />
@@ -52,8 +52,6 @@
                     <element signature="e#756#757#0" expanded="true" />
                     <element signature="e#701#702#0" expanded="true" />
                     <element signature="e#756#757#0" expanded="true" />
-                    <element signature="e#889#890#0" expanded="true" />
-                    <element signature="e#922#923#0" expanded="true" />
                     <element signature="e#1003#1004#0" expanded="true" />
                     <element signature="e#1051#1052#0" expanded="true" />
                   </folding>
@@ -104,8 +102,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-1223">
-                  <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="19" selection-end-column="5" />
+                <state relative-caret-position="207">
+                  <caret line="46" selection-start-line="46" selection-end-line="46" />
                   <folding>
                     <element signature="imports" expanded="true" />
                   </folding>
@@ -132,6 +130,8 @@
       <find>spare</find>
       <find>nextTwoBalls</find>
       <find>itsScore</find>
+      <find>itsCurrentFrame</find>
+      <find>firstThrowInFrame</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -148,8 +148,8 @@
         <option value="$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestFrame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Frame.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Scorer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java" />
       </list>
     </option>
   </component>
@@ -332,8 +332,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.TestGame" />
-        <item itemvalue="JUnit.TestGame.testSimpleStrike" />
         <item itemvalue="JUnit.TestGame.testSimpleSpare" />
+        <item itemvalue="JUnit.TestGame.testSimpleStrike" />
         <item itemvalue="JUnit.TestGame.testFourThrowsNoMark" />
         <item itemvalue="JUnit.TestGame.testTwoThrowNoMark" />
       </list>
@@ -353,21 +353,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGame - 2021.03.19 at 08h 21m 57s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.19 at 08h 23m 47s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.19 at 08h 26m 00s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.19 at 08h 26m 18s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.19 at 08h 28m 06s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestGame - 2021.03.19 at 08h 29m 15s.xml">
       <configuration name="TestGame" configurationId="JUnit" />
     </history-entry>
@@ -383,6 +368,21 @@
     <history-entry file="TestGame - 2021.03.19 at 08h 30m 35s.xml">
       <configuration name="TestGame" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 32m 27s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 34m 46s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame_testSimpleStrike - 2021.03.19 at 08h 34m 55s.xml">
+      <configuration name="TestGame.testSimpleStrike" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 35m 01s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame_testSimpleSpare - 2021.03.19 at 08h 36m 35s.xml">
+      <configuration name="TestGame.testSimpleSpare" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-1920" y="-300" width="1920" height="1200" extended-state="0" />
@@ -395,8 +395,8 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3283186" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.39940238" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3283186" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.39911506" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -415,6 +415,24 @@
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java</url>
+          <line>39</line>
+          <properties />
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java</url>
+          <line>35</line>
+          <properties />
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/.gitignore">
@@ -466,8 +484,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/ohdoking/bowling/TestGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1223">
-          <caret line="15" column="9" lean-forward="true" selection-start-line="15" selection-start-column="9" selection-end-line="19" selection-end-column="5" />
+        <state relative-caret-position="207">
+          <caret line="46" selection-start-line="46" selection-end-line="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -476,8 +494,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="35" column="48" lean-forward="true" selection-start-line="35" selection-start-column="48" selection-end-line="35" selection-end-column="48" />
+        <state relative-caret-position="406">
+          <caret line="40" column="33" selection-start-line="40" selection-start-column="33" selection-end-line="40" selection-end-column="33" />
           <folding>
             <element signature="e#298#299#0" expanded="true" />
             <element signature="e#341#342#0" expanded="true" />
@@ -485,8 +503,6 @@
             <element signature="e#756#757#0" expanded="true" />
             <element signature="e#701#702#0" expanded="true" />
             <element signature="e#756#757#0" expanded="true" />
-            <element signature="e#889#890#0" expanded="true" />
-            <element signature="e#922#923#0" expanded="true" />
             <element signature="e#1003#1004#0" expanded="true" />
             <element signature="e#1051#1052#0" expanded="true" />
           </folding>

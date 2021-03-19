@@ -29,15 +29,16 @@ public class Game {
     }
 
     private boolean isLastBallInFrame(int pins) {
-        return isStrike(pins) || !firstThrowInFrame;
+        return isStrike(pins) || (!firstThrowInFrame);
     }
 
     private boolean isStrike(int pins) {
-        return firstThrowInFrame &&  pins == 10;
+        return firstThrowInFrame && pins == 10;
     }
 
     private void advanceFrame() {
         itsCurrentFrame = Math.min(10, itsCurrentFrame + 1);
+        firstThrowInFrame = true;
     }
 
     public int scoreForFrame(int theFrame) {
