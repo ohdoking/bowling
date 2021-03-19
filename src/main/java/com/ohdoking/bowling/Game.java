@@ -9,8 +9,6 @@ public class Game {
     private boolean firstThrowInFrame = true;
 
     private int ball;
-    private int firstThrow;
-    private int secondThrow;
 
     public void add(int pins) {
         itsThrows[itsCurrentThrow++] = pins;
@@ -44,7 +42,6 @@ public class Game {
         ball = 0;
 
         for(int currentFrame = 0; currentFrame < theFrame; currentFrame++){
-            firstThrow = itsThrows[ball];
             if (isStrike()){
                 ball++;
                 score += 10 + nextTwoBalls();
@@ -57,28 +54,38 @@ public class Game {
     }
 
     private int nextTwoBalls() {
-        return itsThrows[ball] + itsThrows[ball + 1];
+        return nextBall() + itsThrows[ball + 1];
     }
 
     private boolean isStrike() {
-        return itsThrows[ball] == 10;
+        return nextBall() == 10;
     }
 
     private int handleSecondThrow() {
         int score = 0;
-        secondThrow = itsThrows[ball + 1];
-
-        int frameScore = firstThrow + secondThrow;
         //spare need score of next first throw
-        if (frameScore == 10){
+        if (isSpare()){
             ball += 2;
-            score += frameScore + itsThrows[ball];
+            score += 10 + nextBall();
         }
         else {
+
+            score += twoBallsInFrame();
             ball += 2;
-            score += frameScore;
         }
         return score;
+    }
+
+    private int nextBall() {
+        return itsThrows[ball];
+    }
+
+    private boolean isSpare() {
+        return nextTwoBalls() == 10;
+    }
+
+    private int twoBallsInFrame(){
+        return nextBall() + itsThrows[ball + 1];
     }
 
     public int getCurrentFrame() {

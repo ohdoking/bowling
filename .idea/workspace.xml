@@ -45,13 +45,19 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+                <state relative-caret-position="165">
+                  <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
                   <folding>
                     <element signature="e#1453#1454#0" expanded="true" />
                     <element signature="e#1513#1514#0" expanded="true" />
                     <element signature="e#1476#1477#0" expanded="true" />
                     <element signature="e#1520#1521#0" expanded="true" />
+                    <element signature="e#2037#2038#0" expanded="true" />
+                    <element signature="e#2075#2076#0" expanded="true" />
+                    <element signature="e#2069#2070#0" expanded="true" />
+                    <element signature="e#2108#2109#0" expanded="true" />
+                    <element signature="e#2188#2189#0" expanded="true" />
+                    <element signature="e#2242#2243#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -110,6 +116,7 @@
       <find>0</find>
       <find>itsThrows[ball++]</find>
       <find>firstThrow</find>
+      <find>spare</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -330,15 +337,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGame - 2021.03.18 at 06h 59m 18s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.18 at 07h 01m 04s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGame - 2021.03.18 at 07h 02m 40s.xml">
-      <configuration name="TestGame" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestGame - 2021.03.18 at 07h 03m 21s.xml">
       <configuration name="TestGame" configurationId="JUnit" />
     </history-entry>
@@ -358,6 +356,15 @@
       <configuration name="TestGame" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestGame - 2021.03.19 at 07h 56m 38s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 07h 58m 29s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 01m 57s.xml">
+      <configuration name="TestGame" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGame - 2021.03.19 at 08h 03m 49s.xml">
       <configuration name="TestGame" configurationId="JUnit" />
     </history-entry>
   </component>
@@ -398,7 +405,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java</url>
-          <line>49</line>
+          <line>46</line>
           <properties />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
@@ -452,13 +459,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/ohdoking/bowling/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="57" lean-forward="true" selection-start-line="57" selection-end-line="57" />
+        <state relative-caret-position="165">
+          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
           <folding>
             <element signature="e#1453#1454#0" expanded="true" />
             <element signature="e#1513#1514#0" expanded="true" />
             <element signature="e#1476#1477#0" expanded="true" />
             <element signature="e#1520#1521#0" expanded="true" />
+            <element signature="e#2037#2038#0" expanded="true" />
+            <element signature="e#2075#2076#0" expanded="true" />
+            <element signature="e#2069#2070#0" expanded="true" />
+            <element signature="e#2108#2109#0" expanded="true" />
+            <element signature="e#2188#2189#0" expanded="true" />
+            <element signature="e#2242#2243#0" expanded="true" />
           </folding>
         </state>
       </provider>
